@@ -171,5 +171,8 @@ def message(message):
         bot.send_message(message.chat.id,"Hii, how are you?")
     elif message.text == "Bye":
         bot.send_message(message.chat.id,"Oh, okay. Goodbye, my friend!")
-
+    elif message.text == "meow":
+        bot.send_message(message.chat.id,"Cat! You are alive!???")
+    elif message.text == "nose":
+        bot.send_message(message.chat.id,"Oh, it's a human organ")
 bot.polling(none_stop=True, interval=0)
