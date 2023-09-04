@@ -169,5 +169,7 @@ def main(message):
 def message(message):
     if message.text == "Hello":
         bot.send_message(message.chat.id,"Hii, how are you?")
+    elif message.text == "Bye":
+        bot.send_message(message.chat.id,"Oh, okay. Goodbye, my friend!")
 
 bot.polling(none_stop=True, interval=0)
